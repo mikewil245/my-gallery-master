@@ -1,0 +1,183 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Set body defaults */
+body {
+  font-family: "Montserrat", sans-serif;
+  /* center demo content on the screen */
+  /*min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.grid {
+  display: grid;
+  min-height: 66svh;
+  margin-top: 30px;
+}
+
+.profile-person {
+  object-fit: cover;
+  width: 30%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.profile-name {
+  color: #4e5150;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.location {
+  color: #a9a9a9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+.profile-name,
+.location {
+  text-align: center;
+}
+
+.profile-stats {
+  display: grid;
+  margin: 10px auto;
+  column-gap: 15px;
+  grid-template-columns: repeat(3, 80px);
+}
+.number-words {
+  background: #e5e5e5;
+  text-align: center;
+  padding: 10px 2px;
+  border-radius: 10px;
+}
+
+.number-words div h3 {
+  color: #4e5150;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.number-words div span {
+  color: var(--Gray-4, #bdbdbd);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.grid-images {
+  
+  display: grid;
+  margin: 20px 20px;
+  grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr));
+  gap: 5px;
+  row-gap: 10px;
+}
+
+.photo-2 {
+  grid-column: span 2;
+}
+
+.photo-3 {
+  grid-column: span 2;
+}
+
+.photo-4 {
+  grid-row: span 2;
+}
+
+.photo-6 {
+  grid-row: 3;
+}
+
+.grid-images img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: (0px 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+@media screen and (min-width: 455px) {
+  .profile-person{
+    max-width: 15%;
+  }
+
+
+  .grid{
+   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  }
+  
+.grid-images {
+  max-width: 400px;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr));
+  gap: 10px;
+ 
+}
+
+  .grid-images img {
+    width: 100%;
+    
+    border-radius: 10px;
+    box-shadow: (0px 4px 6px rgba(0, 0, 0, 0.15));
+  }
+  .grid {
+    display: grid;
+margin-top: 30px;
+  }
+
+
+  .photo-2{
+ grid-column: span 2;
+   
+  }
+}
